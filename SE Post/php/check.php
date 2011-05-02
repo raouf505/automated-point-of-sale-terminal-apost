@@ -12,7 +12,7 @@
 	{	
 		while($row = mysql_fetch_array($result))
   		{
-  			if($username==$row['Name'] & $pass==$row['Password'])
+  			if($username==$row['Name'] && $pass==$row['Password'])
 			{
 				header("Location: admin.php");
 			}

