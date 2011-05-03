@@ -65,9 +65,9 @@ html,body
 }
 .container
 {
-	margin-top:200px;
+	margin-top:100px;
 	border: 5px solid #565656;
-	-moz-border-radius:30px;
+   -moz-border-radius:30px;
 	background-color:#1A5671;
 
 	
@@ -83,15 +83,14 @@ html,body
 	
 }
 
-.container  input
+.container input
 {
 	
 	height:35px;
 	font-weight:bold;
 	font-size:15pt;
 	
-	
-	
+
 }
 
 .navbar
@@ -147,8 +146,8 @@ border:0px;
 }
 .delete select
 {
-border-radius:10px;
-
+ -moz-border-radius:10px;
+-webkit-border-radius:10px;
 }
 .update table
 {
@@ -167,3 +166,19 @@ border-radius:10px;
 	border:0px;
 	padding-left:10px;
 }
+.search 
+{
+	font-size:16pt;
+	font-weight:bold;
+	color:#fff;
+	
+}
+.admin a:active
+{
+ text-decoration:none;
+}
+.admin a:visited
+{
+  text-decoration: none;
+}
+

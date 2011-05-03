@@ -49,7 +49,7 @@ function checkfor(){
 				<table border="0" height="200px;" width="450px;">
 					<tr>
 					<td>Username</td>
-					<td><input style="border-radius:10px;"type="text" name="username" id="username" /></td></br></br>
+					<td><input style="border-radius:10px; " type="text" name="username" id="username" /></td></br></br>
 					</tr>
 					<tr>
 					<td>Password</td>
