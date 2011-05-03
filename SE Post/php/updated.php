@@ -15,7 +15,13 @@
 	$quantity = $_POST["itemquant"];
 	$type=$_POST["itemtype"];
 	
-	//connection
+	if($name=="" | $price=="" | $quantity=="" | $type=="")
+	{
+		?><div align="center"><h1><?php echo "Enter Something!!!";?></h1></div>
+	<?php
+	}
+	else
+	{	//connection
    include 'dbcon.php';
 		
 	//insert into db
@@ -27,7 +33,8 @@
 	else{
 		echo "Sorry! Try again...";
 	}
-	mysql_close($con)			
+	mysql_close($con);
+	}			
 	?>
 		
 		</div>

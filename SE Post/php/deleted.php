@@ -10,10 +10,6 @@
     <?php
 	//get form data
 	$id=$_POST["id"];
-	$name = $_POST["itemname"];
-	$price = $_POST["itemprice"];
-	$quantity = $_POST["itemquant"];
-	$type=$_POST["itemtype"];
 	
 	//connection
    include 'dbcon.php';

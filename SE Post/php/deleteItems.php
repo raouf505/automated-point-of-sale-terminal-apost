@@ -31,19 +31,19 @@
 				?>	
 					<tr><input name="id" type="hidden" value=<?php echo $row['Id']; ?>>
 					<td>Name</td>
-					<td><input style="border-radius:10px;"type="text" name="itemname" id="itemname" value=<?php echo $row['Name']; ?> /></td></br></br>
+					<td><label><?php echo $row['Name']; ?></label></td></br></br>
 					</tr>
 					<tr>
 					<td>Price</td>
-					<td><input style="border-radius:10px;"type="text" name="itemprice" id="itemprice" value=<?php echo $row['Price']; ?> /></td></br></br>
+					<td><label><?php echo $row['Price']; ?></label></td></br></br>
 					</tr>
 					<tr>
 					<td>Quantity</td>
-					<td><input style=" border-radius:10px;" type="text" name="itemquant" id="itemquant" value=<?php echo $row['Quantity']; ?> /></td>	
+					<td><label><?php echo $row['Quantity']; ?></label></td>	
 					</tr>
 					<tr>
 					<td>Type</td>
-					<td><input style=" border-radius:10px;" type="text" name="itemtype" id="itemtype" value=<?php echo $row['Type']; ?> /></td>		
+					<td><label><?php echo $row['Type']; ?></label></td>		
 					</tr>	
 					<tr>
 					<td><input style="float:right; border-radius:10px;" type="submit"  value="Delete"  /></td>	
