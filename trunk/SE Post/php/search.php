@@ -22,7 +22,7 @@
 		</form>
 		</div>
 		</div>
-
+	
 	<a href="admin.php"><img style="float:left;" src="../images/left.png" /></a>
 </html>
 

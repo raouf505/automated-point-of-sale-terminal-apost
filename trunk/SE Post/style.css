@@ -4,8 +4,8 @@ html,body
 {
 	margin:0;
 	padding:0;
-	background: -moz-linear-gradient(left center, #393939, #266F8F);
-	background: -webkit-gradient(linear, left center, right center, from(#393939), to(#266F8F));
+	background: -moz-linear-gradient(left center, #266F8F, #266F8F);
+	background: -webkit-gradient(linear, left center, right center, from(#266F8F), to(#266F8F));
 	font-family: Ubuntu, sans-serif; 
 }
 @media screen {
@@ -26,6 +26,7 @@ html,body
 
 .centerwrapper
 {
+
 	margin-left:auto;
 	margin-right:auto;
 	width:100%;
@@ -37,6 +38,23 @@ html,body
 	height:100px;
 	background-color:#1A5671;
 	border-bottom:5px solid #565656;
+}
+.header img
+{
+	border:0px solid #fff;	
+}
+
+.logout
+{
+	margin-top:50px;
+	float:right;
+	color:#fff;
+	padding-right:30px;
+}
+.logout a
+{
+	color:#fff;
+	font-size::15pt;
 }
 
 .wrapper
@@ -106,6 +124,11 @@ html,body
 	text-decoration:none;
 }
 
+.admin img
+{
+border:0px;
+}
+
 .add table
 {
 	font-size:14pt;
@@ -114,7 +137,7 @@ html,body
 }
 .add select
 {
-border-radius:10px;
+-moz-border-radius:10px;
 }
 .delete table
 {
@@ -139,7 +162,8 @@ border-radius:10px;
 	border-radius:10px;
 }
 
-img
+.right img
 {
+	border:0px;
 	padding-left:10px;
 }
