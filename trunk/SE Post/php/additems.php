@@ -33,7 +33,7 @@
                     <tr>
 					<td>Picture</td>
 					<td>
-					  <input type="file" name="picture" id="picture">
+					  <input type="file" name="file" id="file">
 					</td>		
 		</tr>	
 					<tr>
