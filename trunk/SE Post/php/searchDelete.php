@@ -7,7 +7,7 @@
 
 		<div class="wrapper">
 		<div class="search">
-		<form method="post" action="updateItems.php">
+		<form method="post" action="deleteItems.php">
 		
 		<table border="0" height="200px;" width="450px;">	
 					<tr>
