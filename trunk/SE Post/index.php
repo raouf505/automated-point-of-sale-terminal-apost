@@ -49,11 +49,11 @@ function checkfor(){
 				<table border="0" height="200px;" width="450px;">
 					<tr>
 					<td>Username</td>
-					<td><input style="border-radius:10px; " type="text" name="username" id="username" /></td></br></br>
+					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px; " type="text" name="username" id="username" /></td></br></br>
 					</tr>
 					<tr>
 					<td>Password</td>
-					<td><input style="border-radius:10px;"type="password" name="password" id="password" /></td></br></br>
+					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px; " type="password" name="password" id="password" /></td></br></br>
 					</tr>
 					<tr>
 					<td>

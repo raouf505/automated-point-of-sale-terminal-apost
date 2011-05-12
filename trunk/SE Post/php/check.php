@@ -14,7 +14,7 @@
   		{
   			if($username==$row['Name'] && $pass==$row['Password'])
 			{
-				header("Location: admin.php");
+				header("Location: adminmain.php");
 			}
   		}
 	}

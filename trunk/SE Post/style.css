@@ -96,8 +96,9 @@ html,body
 .navbar
 {
 	
-	margin-top:100px;
-	margin-left:150px;
+	margin-top:150px;
+	margin-left:auto;
+	margin-right:auto;
 	border:0px solid #fff;
 }
 .navbar ul
@@ -182,3 +183,81 @@ border:0px;
   text-decoration: none;
 }
 
+.navbarmain
+{
+	
+	margin-top:150px;
+	margin-left:250;
+	
+	border:0px solid #fff;
+}
+.navbarmain ul
+{
+	font-size:16pt;
+	font-weight:bold;
+	color:#fff;
+	line-height:40px;
+	
+}
+.navbarmain li
+{
+	list-style:none;
+	float:left;
+	margin-left:120px;
+}
+.navbarmain ul li a
+{
+	display:block;
+	height:45px;
+	border:0px solid #fff;
+	color:#fff;
+	text-decoration:none;
+}
+.adminmain  a :active
+{
+ text-decoration:none;
+}
+.adminmain  a:visited
+{
+  text-decoration:none;
+}
+
+.navcash
+{
+	
+	margin-top:150px;
+	margin-left:200;
+	
+	border:0px solid #fff;
+}
+.navcash ul
+{
+	font-size:16pt;
+	font-weight:bold;
+	color:#fff;
+	line-height:40px;
+	
+}
+.navcash li
+{
+	list-style:none;
+	float:left;
+	margin-left:120px;
+}
+.navcash ul li a
+{
+	display:block;
+	height:45px;
+	border:0px solid #fff;
+	color:#fff;
+	text-decoration:none;
+}
+.cashier a:active
+{
+ text-decoration:none;
+
+}
+.casheir a:visited
+{
+  text-decoration:none;
+}

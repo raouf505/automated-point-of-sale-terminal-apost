@@ -13,7 +13,7 @@
 			<div class="centerwrapper">
 				<div class="header">
 				
-				<a href="admin.php"><img style="padding-left:150px; margin-top:15px;" src="../images/home.png" /></a>
+				<a href="adminmain.php"><img style="padding-left:150px; margin-top:15px;" src="../images/home.png" /></a>
 				<div class="logout">
 				<a href="../index.php">Log out</a>
 				</div>
