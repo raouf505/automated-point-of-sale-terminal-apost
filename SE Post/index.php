@@ -6,32 +6,33 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" type="images/jpg"  href="images/favicon.jpg"/>
-<!--<script language="javascript" type="text/javascript">
 
-function checkfor(){
-	
-	var username=document.getElementById('username').value;
-	var pass=document.getElementById('password').value;
-	if(username =='admin' && pass=='admin')
-	{
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="jquery/jquery.validate.js"></script>
+
+<script type="text/javascript">
 		
-		window.location="php/admin.php"
-	}
-	else if(username=="casheir" && pass=="casheir")
-	{
-		window.location="php/casheir.php"
-	}
-	else
-	{
-		alert('Invalid Username or Password');
-	}
+	$(function() {
+		// highlight 
+		var elements = $("input[type!='submit'], textarea, select");
+		elements.focus(function(){
+			$(this).parents('li').addClass('highlight');
+		});
+		elements.blur(function(){
+			$(this).parents('li').removeClass('highlight');
+		});
 		
-	
-}
-
-
-</script>-->
-
+		$("#forgotpassword").click(function() {
+			$("#password").removeClass("required");
+			$("#login").submit();
+			$("#password").addClass("required");
+			return false;
+		});
+		
+		$("#login").validate()
+	});
+	</script>
+    
 </head>
 <body>
 
@@ -45,22 +46,34 @@ function checkfor(){
 			<div class="wrapper">
 				<div class="container">
 				
-				<form action="php/check.php" method='post'>
-				<table border="0" height="200px;" width="450px;">
-					<tr>
-					<td>Username</td>
-					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px; " type="text" name="username" id="username" /></td></br></br>
-					</tr>
-					<tr>
-					<td>Password</td>
-					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px; " type="password" name="password" id="password" /></td></br></br>
-					</tr>
-					<tr>
-					<td>
-<input style="font-size:14pt; float:right; border-radius:10px; padding-bottom:10px; background-color:#2C5D72; border:5px solid #565656; color:#fff; height:40px; font-family: Ubuntu, sans-serif; line-height:25px;" type="submit" value="Log In" id="log" /></td>	
-					</tr>	
-				</table>
-				</form>	
+                
+                <form action="php/check.php" method='post' id="login">	
+					<ul>
+						<li>
+							<label for="email" style="color:#fff; font-weight:bold;"><span class="required style1">Username</span></label>
+                            
+                            <input style="-moz-border-radius:10px; -webkit-border-radius:10px;" type="text" name="username" id="username" class="text required" />
+                            
+							
+						</li>
+						
+						<li>
+							<label for="password" style="color:#fff; font-weight:bold;"><span class="required style1">Password</span></label>
+                            
+                           <input style="-moz-border-radius:10px; -webkit-border-radius:10px;"type="password" name="password" id="password" minlength="0" class="text required"/>
+                            
+						</li>
+
+					</ul>
+				
+				
+				<fieldset class="submit">
+                    <input style="font-size:14pt; float:right; -moz-border-radius:10px;- webkit-border-radius:10px; padding-bottom:10px; background-color:#2C5D72; border:5px solid #565656; color:#fff; height:40px; font-family: Ubuntu, sans-serif; line-height:25px;" type="submit" value="Log In" id="log" />
+				</fieldset>
+				
+				<div class="clear"></div>
+				</form>
+
 				</div>
 			</div>
 	

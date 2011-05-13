@@ -12,15 +12,15 @@
 <table border="0" height="200px;" width="450px;">	
 					<tr>
 					<td>Name</td>
-					<td><input style="border-radius:10px;"type="text" name="itemname" id="itemname" /></td></br></br>
+					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px;"type="text" name="itemname" id="itemname" /></td></br></br>
 					</tr>
 					<tr>
 					<td>Price</td>
-					<td><input style="border-radius:10px;"type="text" name="itemprice" id="itemprice" /></td></br></br>
+					<td><input style="-moz-border-radius:10px; -webkit-border-radius:10px; "type="text" name="itemprice" id="itemprice" /></td></br></br>
 					</tr>
 					<tr>
 					<td>Quantity</td>
-					<td><input style=" border-radius:10px;" type="text" name="itemquant" id="itemquant" /></td>	
+					<td><input style=" -moz-border-radius:10px; -webkit-border-radius:10px; " type="text" name="itemquant" id="itemquant" /></td>	
 					</tr>
 					<tr>
 					<td>Type</td>
@@ -37,7 +37,7 @@
 					</td>		
 		</tr>	
 					<tr>
-					<td><input style="float:right; border-radius:10px;" type="submit"  value="ADD"  /></td>	
+					<td><input style="float:right;-moz-border-radius:10px; -webkit-border-radius:10px;" type="submit"  value="ADD"  /></td>	
 					</tr>		
 		
 		</table>
