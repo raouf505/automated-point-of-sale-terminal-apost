@@ -7,16 +7,16 @@
 
 		<div class="wrapper">
 		<div class="update">
-		<form action="deleted.php" method="post">
+		<form action="updated.php" method="post">
 		<?php
 	//get form data
-	$name = $_POST["itemname"];
+	$name = $_POST["cashierName"];
 	$flag=0;
 	
 	
 	//connection
    	include 'dbcon.php';
-	$result = mysql_query("SELECT * FROM item ORDER BY Name");	
+	$result = mysql_query("SELECT * FROM person ORDER BY Name");	
 	if($name=="")
 	{
 		?><div align="center"><h1><?php echo "Enter Something to Search!!!";?></h1></div>
@@ -31,22 +31,14 @@
 				?>	
 					<tr><input name="id" type="hidden" value=<?php echo $row['Id']; ?>>
 					<td>Name</td>
-					<td><label><?php echo $row['Name']; ?></label></td></br></br>
+					<td><input style="border-radius:10px;"type="text" name="cashierName" id="cashierName" value=<?php echo $row['Name']; ?> /></td></br></br>
 					</tr>
 					<tr>
-					<td>Price</td>
-					<td><label><?php echo $row['Price']; ?></label></td></br></br>
-					</tr>
-					<tr>
-					<td>Quantity</td>
-					<td><label><?php echo $row['Quantity']; ?></label></td>	
-					</tr>
-					<tr>
-					<td>Type</td>
-					<td><label><?php echo $row['Type']; ?></label></td>		
+					<td>Password</td>
+					<td><input style="border-radius:10px;"type="text" name="cashierPassword" id="cashierPassword" value=<?php echo $row['Password']; ?> /></td></br></br>
 					</tr>	
 					<tr>
-					<td><input style="float:right; -moz-border-radius:10px; -webkit-border-radius:10px;" type="submit"  value="Delete"  /></td>	
+					<td><input style="float:right; border-radius:10px;" type="submit"  value="Update"  /></td>	
 					</tr>		
 		
 		</table><?php
@@ -65,7 +57,7 @@
 		</div>
 		</div>
 			<div class="right">
-		<a href="admin.php"><img style="float:left;" src="../images/left.png" /></a>
+		<a href="../adminmain.php"><img style="float:left;" src="../../images/left.png" /></a>
 		</div>
 
 

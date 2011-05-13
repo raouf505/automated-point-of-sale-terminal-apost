@@ -1,3 +1,6 @@
+
+
+
 <?php
 	include 'dbcon.php';
   	$username=$_POST["username"];
@@ -16,6 +19,7 @@
 			{
 				header("Location: adminmain.php");
 			}
+			
   		}
 	}
 	mysql_close($con);

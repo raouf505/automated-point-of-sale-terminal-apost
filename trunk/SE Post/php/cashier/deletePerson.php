@@ -10,13 +10,13 @@
 		<form action="deleted.php" method="post">
 		<?php
 	//get form data
-	$name = $_POST["itemname"];
+	$name = $_POST["personname"];
 	$flag=0;
 	
 	
 	//connection
    	include 'dbcon.php';
-	$result = mysql_query("SELECT * FROM item ORDER BY Name");	
+	$result = mysql_query("SELECT * FROM person ORDER BY Name");	
 	if($name=="")
 	{
 		?><div align="center"><h1><?php echo "Enter Something to Search!!!";?></h1></div>
@@ -34,19 +34,16 @@
 					<td><label><?php echo $row['Name']; ?></label></td></br></br>
 					</tr>
 					<tr>
-					<td>Price</td>
-					<td><label><?php echo $row['Price']; ?></label></td></br></br>
-					</tr>
-					<tr>
-					<td>Quantity</td>
-					<td><label><?php echo $row['Quantity']; ?></label></td>	
+					<td>Password</td>
+					<td><label><?php echo $row['Password']; ?></label></td></br></br>
 					</tr>
 					<tr>
 					<td>Type</td>
-					<td><label><?php echo $row['Type']; ?></label></td>		
-					</tr>	
+					<td><label><?php echo $row['Type']; ?></label></td>	
+					</tr>
+	
 					<tr>
-					<td><input style="float:right; -moz-border-radius:10px; -webkit-border-radius:10px;" type="submit"  value="Delete"  /></td>	
+					<td><input style="float:right; border-radius:10px;" type="submit"  value="Delete"  /></td>	
 					</tr>		
 		
 		</table><?php
@@ -65,7 +62,7 @@
 		</div>
 		</div>
 			<div class="right">
-		<a href="admin.php"><img style="float:left;" src="../images/left.png" /></a>
+		<a href="../admin.php"><img style="float:left;" src="../../images/left.png" /></a>
 		</div>
 
 
