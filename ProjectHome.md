@@ -1,0 +1,1 @@
+User can make sales. and
